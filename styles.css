@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 235, 235);
+    height: 100%;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+    font-size: 40px;
+    background-color: #dfe7e3;
+}
+
+.header > button{
+    background-color: #afb4b1;
+    padding: 10px ;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+
+.Add-Book-container{
+    display: grid;
+    place-items: center;
+    padding: 40px;
+}
+
+.Add-Book{
+    padding: 20px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Add-Book:hover{
+    padding: 20px;
+    background-color: #838985;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.content{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    padding: 50px 200px 50px 200px;
+    gap: 30px;
+}
+
+.footer{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.footer > p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card{
+    padding: 30px;
+    background-color: #dfe7e3;
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    background-color: gray;
+}
+
+.form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(240, 235, 235);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form > input{
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+.form > button{
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+
+
+.newBookLabel{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.read-status-container{
+    display: flex;
+    gap: 15px;
+    font-size: 25px;
+}
+
+input[type="checkbox"]{
+    width: 30px;
+}
+
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+    height: 320px;
+}
+
+.card > *{
+    text-align: center;
+    font-size: 30px;
+}
+
+.card > button{
+    background-color: #dfe7e3;
+    padding: 10px;
+
+}
+
+.red{
+    background-color: rgb(236, 87, 87);
+}
